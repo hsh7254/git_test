@@ -190,3 +190,59 @@ cp.txt  cpdir  download  name2.txt
 tjs0330@DESKTOP-PGS14BO:~$ ls cpdir/
 3
 tjs0330@DESKTOP-PGS14BO:~$
+tjs0330@DESKTOP-PGS14BO:~$ rm -rf *
+tjs0330@DESKTOP-PGS14BO:~$ ls
+tjs0330@DESKTOP-PGS14BO:~$ apt-get install htop
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+tjs0330@DESKTOP-PGS14BO:~$ sudo apt-get install htop
+[sudo] password for tjs0330:
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+htop is already the newest version (2.2.0-2build1).
+htop set to manually installed.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+tjs0330@DESKTOP-PGS14BO:~$ htop
+tjs0330@DESKTOP-PGS14BO:~$ htop
+tjs0330@DESKTOP-PGS14BO:~$ htop
+
+[1]+  Stopped                 htop
+tjs0330@DESKTOP-PGS14BO:~$ kill -9 284
+tjs0330@DESKTOP-PGS14BO:~$ fg
+-bash: fg: job has terminated
+[1]+  Killed                  htop
+tjs0330@DESKTOP-PGS14BO:~$ htop
+tjs0330@DESKTOP-PGS14BO:~$ htop
+tjs0330@DESKTOP-PGS14BO:~$ jobs
+tjs0330@DESKTOP-PGS14BO:~$
+tjs0330@DESKTOP-PGS14BO:~$ htop
+tjs0330@DESKTOP-PGS14BO:~$ jobs
+tjs0330@DESKTOP-PGS14BO:~$ htop
+
+[1]+  Stopped                 htop
+tjs0330@DESKTOP-PGS14BO:~$ htop
+
+[2]+  Stopped                 htop
+tjs0330@DESKTOP-PGS14BO:~$ fg
+htop
+
+[2]+  Stopped                 htop
+tjs0330@DESKTOP-PGS14BO:~$ jobs
+[1]-  Stopped                 htop
+[2]+  Stopped                 htop
+tjs0330@DESKTOP-PGS14BO:~$ htop
+tjs0330@DESKTOP-PGS14BO:~$
+tjs0330@DESKTOP-PGS14BO:~$ kill -9 289
+tjs0330@DESKTOP-PGS14BO:~$ fg
+-bash: fg: job has terminated
+[2]+  Killed                  htop
+tjs0330@DESKTOP-PGS14BO:~$ htop
+tjs0330@DESKTOP-PGS14BO:~$ kill -9 288
+tjs0330@DESKTOP-PGS14BO:~$ kill -9 290
+-bash: kill: (290) - No such process
+[1]+  Killed                  htop
+tjs0330@DESKTOP-PGS14BO:~$ fg
+-bash: fg: current: no such job
+tjs0330@DESKTOP-PGS14BO:~$ jobs
+tjs0330@DESKTOP-PGS14BO:~$ fg
